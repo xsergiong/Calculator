@@ -8,23 +8,29 @@
     <title>Calculator | xsergiong</title>
 </head>
 <body>
-    <input id="text" type="text">
-    <div id="container">
-        <button id="calc" onclick="addToContainer('+')">+</button>
-        <button onclick="addToContainer('7')">7</button>
-        <button onclick="addToContainer('8')">8</button>
-        <button onclick="addToContainer('9')">9</button>
-        <button id="calc" onclick="addToContainer('-')">-</button>
-        <button onclick="addToContainer('4')">4</button>
-        <button onclick="addToContainer('5')">5</button>
-        <button onclick="addToContainer('6')">6</button>
-        <button id="calc"  onclick="addToContainer('*')">*</button>
-        <button onclick="addToContainer('1')">1</button>
-        <button onclick="addToContainer('2')">2</button>
-        <button onclick="addToContainer('3')">3</button>
-        <button id="calc" onclick="addToContainer('/')">/</button>
-        <button id="calc"  onclick="addToContainer('C')">C</button>
-        <button onclick="addToContainer('0')">0</button>
+    <input type="range" orient="vertical" id="slider"/>
+    <div id="calculator">
+        <input id="text" type="text">
+        <div id="container">
+            <button class="calc" id="calc1" onclick="addToContainer('+')">+</button>
+            <button onclick="addToContainer('7')">7</button>
+            <button onclick="addToContainer('8')">8</button>
+            <button onclick="addToContainer('9')">9</button>
+            <button class="calc" id="calc2" onclick="addToContainer('-')">-</button>
+            <button onclick="addToContainer('4')">4</button>
+            <button onclick="addToContainer('5')">5</button>
+            <button onclick="addToContainer('6')">6</button>
+            <button class="calc" id="calc3"  onclick="addToContainer('*')">*</button>
+            <button onclick="addToContainer('1')">1</button>
+            <button onclick="addToContainer('2')">2</button>
+            <button onclick="addToContainer('3')">3</button>
+            <button class="calc" id="calc4" onclick="addToContainer('/')">/</button>
+            <button onclick="addToContainer('0')">0</button>
+            <button onclick="addToContainer('.')">.</button>
+            <button class="calc" id="calc5" onclick="calc()">=</button>
+            <button class="calc" id="calc6" onclick="clearContainer()">C</button>
+        </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
